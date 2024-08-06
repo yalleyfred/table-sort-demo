@@ -66,9 +66,9 @@ The application fetches data from the [Rick and Morty API](https://rickandmortya
 
 - **`https://rickandmortyapi.com/api/character`**: Retrieves character data.
 
-### Contributing
+### Contributors
+Fredrick Yalley
 
-Feel free to fork the repository and submit pull requests. Contributions are welcome!
 
 ### License
 
