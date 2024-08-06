@@ -1,27 +1,79 @@
-# TableAppDemo
+# Table App Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Overview
 
-## Development server
+This Angular application features a responsive sortable table that fetches data from the Rick and Morty API. The table allows users to sort data by any column and is styled using Angular Material.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Sortable Table**: Sort data by any column.
+- **Responsive Design**: Table adjusts to different device sizes.
+- **Angular Material**: Utilizes Angular Material for styling and UI components.
+- **Testing**: Includes unit tests using Jasmine.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ensure you have the following installed:
 
-## Running unit tests
+- [Node.js](https://nodejs.org/) (version 14.x or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. **Clone the repository**:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    git clone hhttps://github.com/yalleyfred/table-sort-demo.git
+    ```
 
-## Further help
+2. **Navigate to the project directory**:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```bash
+    cd table-app-demo
+    ```
+
+3. **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+### Running the Application
+
+To start the development server and run the application:
+
+```bash
+ng serve
+```
+
+Open your browser and go to `http://localhost:4200` to view the application.
+
+### Running Tests
+
+To run the unit tests using Jasmine:
+
+```bash
+ng test
+```
+
+### Configuration
+
+#### API Integration
+
+The application fetches data from the [Rick and Morty API](https://rickandmortyapi.com/). The API endpoint used is:
+
+- **`https://rickandmortyapi.com/api/character`**: Retrieves character data.
+
+### Contributing
+
+Feel free to fork the repository and submit pull requests. Contributions are welcome!
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Let me know if you need any more changes!
