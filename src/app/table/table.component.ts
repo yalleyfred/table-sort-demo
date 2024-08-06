@@ -10,7 +10,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  displayedColumns: string[] = ['userId', 'id', 'title', 'body'];
+  displayedColumns: string[] = ['id', 'name', 'status', 'gender', 'location', 'species'];
   dataSource = new MatTableDataSource<any>();
 
   @ViewChild(MatSort) sort!: MatSort;
@@ -19,19 +19,10 @@ export class TableComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe((response: any) => {
-      this.dataSource.data = response;
+    this.http.get('https://rickandmortyapi.com/api/character').subscribe((response: any) => {
+      this.dataSource.data = response.results;
       this.dataSource.sort = this.sort;
       this.dataSource.paginator = this.paginator;
     });
-  }
-
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
   }
 }
